@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Orinique</title>
+</head>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=" style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <nav class="navbar">
+        <h1>Orinique</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collection</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collection</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST"; class="contact-left" style="background-color: #1d232c; display: flex;  flex-direction: column;  padding: 2vw ; width: 70%;  max-width: 550px;  border-radius: 10px;">
+            <div class="contact-left-title">
+                <h2 style="color: #f2f4f7;">Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="a66b855c-ec61-4997-8194-911c9d969f7c">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="message" placeholder="Your message" class="contact-input" required></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingText">Orinique</h2>
+                <p>More than metal. A legacy in every piece.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2025Orinique.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+</body>
+
+</html>
